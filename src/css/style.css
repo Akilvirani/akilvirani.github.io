@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+body {
+    background-color: #FFFFFF; 
+    color: #000000;
+    font-family: Lato, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container img {
+    animation: float1 3s infinite ease-in-out;
+    border-radius: 100%;
+    height: 8rem;
+  }
+  
+  .container {
+    padding: 6rem 10%;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+  }
+  
+.caution {
+    padding-top: 15%;
+    height: 50px;
+}
+
+#hi {
+    font-size: 54px;
+    font-weight: 900;
+}
+
+#name {
+    color: #FF0004;
+    font-weight: 400;
+}
+
+#cons {
+    margin-bottom: -10px;
+}
+
+.social {
+    height: 30px;
+    margin: 5px;
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+  
+.pulse {
+    animation-name: pulse;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+}
+
+.underconstruction-sign {
+    transform: rotate(-5deg);
+    top: 10%;
+    right: 10%;
+    position: absolute;
+    background: #FFA726;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.underconstruction-sign img {
+    width: 10px;
+}
+  
+@media (max-width: 548px) {
+    .underconstruction-sign {
+      top: 4%;
+      right: 8%;
+    }
+}
+  
+.underconstruction-words {
+    color: #000;
+}
+  
+.underconstruction-words-1 {
+    font-size: 12px;
+    color: #000;
+    margin-top: -.3rem;
+}
+  
+.underconstruction-sign .warning-sign {
+    padding-top: .5rem;
+}
+  
+.cones {
+    margin-bottom: 1.5rem;
+}
+  
+.cone-top {
+      display: inline-block;
+      width: 30px;
+      height: 80px;
+      background: #FF9800;
+    transform: perspective(85px) rotateX(50deg);
+}
+  
+.base {
+    margin-top: 9px;
+    display: inline-block;
+    position: relative;
+    left: -5px;
+    background: #000;
+    height: 9px;
+    width: 40px;
+}
+  
+.stripe {
+    margin-top: 20px;
+    background: #FFF3E0;
+    height: 12px;
+    width: 100%;
+}
+  
+.cone {
+    display: inline;
+    margin: 60px;
+}
+  
+@media (max-width: 785px){
+    .container {
+    padding: 6rem 10% 1rem 10%;
+    }
+  
+    .cone {
+    margin: 30px;
+    }
+}
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 1.15, 1.15);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+.fadeInDownName {
+    animation-name: fadeInDown;
+    animation-delay: 2s;
+  }
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-delay: 6s;
+}
+
+.splash {
+    position: absolute;
+    margin-top: -10px;
+    width: 64px;
+    height: 164px;
+    background: #FFFD00;
+    z-index: 0;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    }
+      
+.splash2 {
+    position: relative;
+    margin-top: -10px;
+    left: 40px;
+    width: 64px;
+    height: 200px;
+    background: #FF0004;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 4rem;
+    }
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+
+}
+
+  
+
+  
+
